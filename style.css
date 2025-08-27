@@ -1,0 +1,73 @@
+
+/* shared style */
+.dark-2{
+    color: rgba(137, 135, 161, 1);
+}
+.dark-1{
+    color: rgba(37, 36, 50, 1);
+}
+.dark-3{
+    color: rgba(0, 0, 0, 0.5);
+}
+.orange{
+    color: rgba(233, 90, 8, 1);
+}
+/* navbar */
+.logo{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+}
+nav li{
+    list-style: none;
+    padding: 0 22px;
+}
+nav ul{
+    display: flex;
+}
+.navbar{
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+/* banner */
+.title{
+    font-size: 65px;
+    font-weight: bold;
+}
+.Hero{
+    display: flex;
+    max-width: 1140px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 60px;
+    
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width:570px) {
+    .Hero, nav ul{
+        flex-direction: column;
+    }
+    .h{
+        display: none;
+    }
+    .Hero img{
+        max-width: 390px;
+    }
+    .Hero .title{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .Hero{
+        flex-direction: column-reverse;
+    }
+}

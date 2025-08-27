@@ -19,6 +19,13 @@
     padding: 10px 30px;
     font-size: 20px;
 }
+.red{
+    max-width: 1140px;
+    margin:30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /* navbar */
 .logo{
     display: flex;
@@ -105,6 +112,58 @@ nav ul{
     margin-top: 10px;
     font-size: 22px;
 }
+.deals{
+    text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.deals-img{
+    display: flex;
+    justify-content:space-between;
+    gap: 25px;
+    padding: 40px;
+    
+}
+.side-image{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card-1{
+    height: 197px;
+    width: 366px;
+}
+.card-2{
+    width: 366px;
+    height: 206px;
+}
+.card-3{
+    width: 780px;
+    height: 462px;
+}
+.deals h3,h1{
+    padding-top: 70px;
+}
+.card-3-title{
+    font-size: 40px;
+    font-weight: bold;
+}
+.shop1{
+    text-decoration: underline;
+}
+.shop2{
+    text-decoration: underline;
+    font-size: 26px;
+}
+.card-1, .card-2, .card-3 {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  
+}
 .Bunch{
     background-image: url("assets/news-letter-bg.png");
     height: 540px;
@@ -124,9 +183,23 @@ nav ul{
     border: none;
     justify-content: center;
 }
+.footer{
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    max-width: 1120px;
+}
+.footer-descp{
+    font-size: 22px;
+    width: 360px;
+}
+.font{
+    display: flex;
+    gap: 20px;
+}
 /* responsive */
 @media screen and (max-width:570px) {
-    .Hero, nav ul{
+    .Hero, nav ul,.footer,.flower,.deals-img{
         flex-direction: column;
     }
     .h{
@@ -139,8 +212,26 @@ nav ul{
         font-size: 24px;
         font-weight: bold;
     }
+    .flower{
+        padding: 0;
+    }
+    .flower-img{
+        margin-top: -40px;
+        width: 390px;
+    }
+    .flower-descp{
+        width: 380px;
+        margin-left: -3px;
+        font-size: 22px;
+    }
+    .hesh ul li{
+        width: 350px;
+    }
     .Hero{
         flex-direction: column-reverse;
+    }
+    #bedge{
+        display: none;
     }
     .card-college{
         grid-template-columns: repeat(2, 1fr);
@@ -149,5 +240,33 @@ nav ul{
     .card button{
         font-size: 16px;
     }
-
+    .Bunch{
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        padding: 40px 20px;
+        max-width: 358px;
+        margin-left: -2px;
+    }
+    .email input{
+        width: 100%;
+    }
+    .b-title{
+    font-size: 30px;
+    padding-top: 0;
+    margin-bottom: 20px;
+    }
+    .card-3,.card-1,.card-2{
+        width: 360px;
+        height: 175px;
+    }
+    .card-3 h1{
+        font-size: 22px;
+    }
+    .deals-img{
+        margin-left: -42px;
+    }
+    .footer{
+        padding-left: 20px;
+    }
 }

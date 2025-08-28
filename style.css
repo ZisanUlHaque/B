@@ -12,9 +12,18 @@
 .orange{
     color: rgba(233, 90, 8, 1);
 }
+.btn1{
+    background-color: rgba(233, 90, 8, 1);
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px; 
+}
 .btn{
     background-color: rgba(233, 90, 8, 1);
     border: none;
+    height: 50px;
+    width: 100%;
     color: white;
     padding: 10px 30px;
     font-size: 20px;
@@ -188,6 +197,7 @@ nav ul{
     justify-content: space-between;
     display: flex;
     max-width: 1120px;
+    margin-bottom: 50px;
 }
 .footer-descp{
     font-size: 22px;
